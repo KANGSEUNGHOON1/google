@@ -1,0 +1,11 @@
+window.onload = function () {
+  const navScroll = document.querySelector("nav");
+  window.addEventListener("scroll", function () {
+    console.log("스크롤 y 값:", window.scrollY);
+    if (window.scrollY > 70) {
+      navScroll.classList.add("scrolled");
+    } else {
+      navScroll.classList.remove("scrolled");
+    }
+  });
+};
